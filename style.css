@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, #b3e0ff, #6699cc);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+}
+
+.title {
+    padding: 25px;
+    background: linear-gradient(45deg, #4e54c8, #8f94fb);
+    border-radius: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 20px;
+    color: #333;
+}
+
+input {
+    font-size: 18px;
+    height: 40px;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-container p {
+    font-size: 20px;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        margin: 25px;
+        font-size: smaller;
+    }
+    main {
+        margin: 25px;
+    }
+}
+    
+
+@media only screen and (max-width: 480px) {
+    header {
+        margin: 25px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    main {
+        margin: 25px;
+    }
+    label {
+        font-size: 16px;
+    }
+    
+    input {
+        font-size: 14px;
+    }
+    
+    .input-container p {
+        font-size: 16px;
+    }
+}
